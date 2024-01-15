@@ -1,0 +1,7 @@
+.BoardWithUsers {
+    display: inline-block;
+}
+
+.Timer, .StartGame {
+    margin: 10px;
+}
