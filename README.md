@@ -20,4 +20,4 @@ Builds the app for production to the `build` folder.
 ## ENV variables
 
 ### `export REACT_APP_SERVER_CONNECT_URL=http://localhost:8080`
-Server URL that React app needs to communicate with
+Server URL that React app needs to communicate with. Default to http://localhost:8080

@@ -1,8 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import io from 'socket.io-client';
 
-const serverConnectUrl = process.env.REACT_APP_SERVER_CONNECT_URL;
-
 const SocketContext = createContext();
 
 export const useSocket = () => {
@@ -13,7 +11,7 @@ export const SocketProvider = ({ children }) => {
     const [socket, setSocket] = useState(null);
 
     useEffect(() => {
-        const newSocket = io(serverConnectUrl);
+        const newSocket = io(process.env.REACT_APP_SERVER_CONNECT_URL || 'http://localhost:8080');
 
         setSocket(newSocket);
 
