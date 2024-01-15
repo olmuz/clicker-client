@@ -3,6 +3,6 @@
   1.2 Security - npm run security-check
 2. On merge to main or direct push to main run following steps:
   1.1 Test - npm test
-  1.2 Security - run security-check
+  1.2 Security - npm run security-check
   1.3 Build (nginx serve react app) and push docker image to Docker Hub
   1.4 Deploy image with Docker Compose
